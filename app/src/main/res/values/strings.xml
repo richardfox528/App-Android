@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">TodoApp</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="title_imc">Escoge tus Preferencias</string>
+    <string name="height">Altura</string>
+    <string name="Weight">Peso</string>
+    <string name="age">Edad</string>
+    <string name="calcule">Calcular</string>
+    <string name="re_calcule">Re-Calcular</string>
+    <string name="result">Tu resultado es</string>
+    <string name="error">Error</string>
+
+    <!--Results IMC-->
+    <string name="bajo_peso">Bajo peso.</string>
+    <string name="description_bajo_peso">Estas por debajo de lo óptimo para tu peso y estatura.</string>
+
+    <string name="peso_normal">Normal.</string>
+    <string name="description_peso_normal">Estas en un peso normal para tu peso y estatura.</string>
+
+    <string name="sobrepeso">Estas en sobrepeso.</string>
+    <string name="description_sobrepeso">Estas por encima de lo optimo para tu peso y estatura.</string>
+
+    <string name="obesidad">Estas en sobrepeso.</string>
+    <string name="description_obesidad">Estas muy por encima de lo optimo para tu peso y estatura.</string>
+
+    <!-- Preference Titles -->
+
+
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="name_hint">Name</string>
+    <string name="calcula_imc">CALCULA IMC</string>
+    <string name="btn_func_saludar">Función Saludar</string>
+    <string name="btn_to_do_app">To Do App</string>
+    <string name="title_activity_to_do_app">ToDoAppActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="todo_title">bienvenido</string>
+    <string name="categoría_todo_app">Categoría</string>
+    <string name="task_todo_app">tareas</string>
+    <string name="add_task">Añade tu tarea</string>
+    <string name="btn_add_task">Crear tarea</string>
+    <string name="task_negocios">Negocios</string>
+    <string name="task_personal">Personal</string>
+    <string name="task_otros">Otros</string>
+    <string name="title_activity_super_hero_list">SuperHeroListActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Primer Parrafo</string>
+    <string name="second_fragment_label">Segundo Parrafo</string>
+    <string name="next">Siguiente</string>
+    <string name="previous">Anterior</string>
+
+    <string name="poema_mario_benedetti">
+        <b>‘Mucho más grave’ por: Mario Benedetti</b>
+        <i></i>
+        Todas las parcelas de mi vida tienen algo tuyo
+        y eso en verdad no es nada extraordinario
+        vos lo sabés tan objetivamente como yo.
+        Sin embargo hay algo que quisiera aclararte,
+        cuando digo todas las parcelas,
+        no me refiero solo a esto de ahora,
+        a esto de esperarte y aleluya encontrarte,
+        y carajo perderte,
+        y volverte a encontrar,
+        y ojalá nada más.
+        No me refiero a que de pronto digas, voy a llorar
+        y yo con un discreto nudo en la garganta, bueno llorá.
+        Y que un lindo aguacero invisible nos ampare
+        y quizás por eso salga enseguida el sol.
+        Ni me refiero a solo a que día tras día,
+        aumente el stock de nuestras pequeñas y decisivas complicidades,
+        o que yo pueda o creerme que puedo convertir mis reveses en victorias,
+        o me hagas el tierno regalo de tu más reciente desesperación.
+
+        No.
+        La cosa es muchísimo más grave.
+        Cuando digo todas las parcelas
+        quiero decir que además de ese dulce cataclismo,
+        también estas reescribiendo mi infancia,
+        esa edad en que uno dice cosas adultas y solemnes
+        y los solemnes adultos las celebran,
+        y vos en cambio sabés que eso no sirve.
+        Quiero decir que estás rearmando mi adolescencia,
+        ese tiempo en que fui un viejo cargado de recelos,
+        y vos sabés en cambio extraer de ese páramo,
+        mi germen de alegría y regarlo mirándolo.
+        Quiero decir que estás sacudiendo mi juventud,
+        ese cántaro que nadie tomó nunca en sus manos,
+        esa sombra que nadie arrimó a su sombra,
+        y vos en cambio sabés estremecerla
+        hasta que empiecen a caer las hojas secas,
+        y quede la armazón de mi verdad sin proezas.
+        Quiero decir que estás abrazando mi madurez
+        esta mezcla de estupor y experiencia,
+        este extraño confín de angustia y nieve,
+        esta bujía que ilumina la muerte,
+        este precipicio de la pobre vida.
+        Como ves es más grave,
+        Muchísimo más grave,
+        Porque con estas y con otras palabras,
+        quiero decir que no sos tan solo,
+        la querida muchacha que sos,
+        sino también las espléndidas o cautelosas mujeres
+        que quise o quiero.
+
+        Porque gracias a vos he descubierto,
+        (dirás que ya era hora y con razón),
+        que el amor es una bahía linda y generosa,
+        que se ilumina y se oscurece,
+        según venga la vida,
+        una bahía donde los barcos llegan y se van,
+        llegan con pájaros y augurios,
+        y se van con sirenas y nubarrones.
+        Una bahía linda y generosa,
+        Donde los barcos llegan y se van.
+        Pero vos,
+        Por favor,
+        No te vayas
+    </string>
+    <string name="poema_julio_cortazar"><b>‘Te amo por ceja…’ por: Julio Cortázar</b>
+        <i></i>\nTe amo por ceja, por cabello, te debato en corredores\nblanquísimos donde se juegan las fuentes\nde la luz,\nte discuto a cada nombre, te arranco con delicadeza\nde cicatriz,\nvoy poniéndote en el pelo cenizas de relámpago y\ncintas que dormían en la lluvia.\n\nNo quiero que tengas una forma, que seas\nprecisamente lo que viene detrás de tu mano,\nporque el agua, considera el agua, y los leones\ncuando se disuelven en el azúcar de la fábula,\ny los gestos, esa arquitectura de la nada,\nencendiendo sus lámparas a mitad del encuentro.\n\nTodo mañana es la pizarra donde te invento y te\ndibujo,\npronto a borrarte, así no eres, ni tampoco con ese\npelo lacio, esa sonrisa.\nBusco tu suma, el borde de la copa donde el vino\nes también la luna y el espejo,\nbusco esa línea que hace temblar a un hombre en\nuna galería de museo.\nAdemás te quiero, y hace tiempo y frío.</string>
+    <string name="search_superhero">Busca tu Super Heroe...</string>
+    <string name="settings">Settings</string>
+    <string name="active_mode_dark">Activar modo oscuro para un efecto visual</string>
+    <string name="mode_dark">Modo oscuro</string>
+</resources>
