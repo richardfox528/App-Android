@@ -12,6 +12,7 @@ import kotlinx.coroutines.suspendCancellableCoroutine
 class LocationService {
     @SuppressLint("MissingPermission")
     suspend fun getUserLocation(context: Context): Location? {
+
         val fusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(context)
         val isUserLocationUserGranted = true
         val locationManager = context.getSystemService(Context.LOCATION_SERVICE) as LocationManager
@@ -43,6 +44,5 @@ class LocationService {
                 }
             }
         }
-
     }
 }

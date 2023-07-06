@@ -7,7 +7,8 @@
         android:required="false" />
     <uses-feature
         android:name="android.hardware.telephony"
-        android:required="false" /> <!-- Access internet -->
+        android:required="false" />
+    <!-- Access internet -->
     <uses-permission android:name="android.permission.INTERNET" /> <!-- Access camera -->
     <uses-permission android:name="android.permission.CAMERA" /> <!-- Access bluetooth -->
     <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- Access contacts -->
