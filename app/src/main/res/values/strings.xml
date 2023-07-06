@@ -60,8 +60,8 @@
     <string name="title_activity_super_hero_list">SuperHeroListActivity</string>
 
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Primer Parrafo</string>
-    <string name="second_fragment_label">Segundo Parrafo</string>
+    <string name="first_fragment_label">First Poem</string>
+    <string name="second_fragment_label">Second Poem</string>
     <string name="next">Siguiente</string>
     <string name="previous">Anterior</string>
 

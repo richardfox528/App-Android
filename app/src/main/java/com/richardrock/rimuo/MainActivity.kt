@@ -2,6 +2,7 @@ package com.richardrock.rimuo
 
 import android.content.Intent
 import android.Manifest
+import android.Manifest.*
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.ImageButton
@@ -9,16 +10,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatButton
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.richardrock.rimuo.UserLocation.GetUserLocationActivity
+import com.richardrock.rimuo.databinding.ActivityMainBinding
 import com.richardrock.rimuo.rvLeerPoemas.PoemasActivity
 import com.richardrock.rimuo.rvSuperHeroApp.rvSuperHeroApp
 import com.richardrock.rimuo.settings.SettingsActivity
 import com.richardrock.rimuo.todoapp.ToDoAppActivity
 
 class MainActivity : AppCompatActivity() {
-    val PERMISSIONS_REQUEST_CODE = 123
+    private lateinit var binding: ActivityMainBinding
+    private val PERMISSIONS_REQUEST_CODE = 123
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val btnSettings = findViewById<ImageButton>(R.id.btnSettings)
         val btnSaludar = findViewById<AppCompatButton>(R.id.menu)
@@ -26,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         val btnTodoApp = findViewById<AppCompatButton>(R.id.btnToDoApp)
         val btnSuperHero = findViewById<AppCompatButton>(R.id.btnSuperHero)
         val btnLeerPoemas = findViewById<AppCompatButton>(R.id.btnLeerPoemas)
+        val btnGetUbication = findViewById<AppCompatButton>(R.id.btnGetUbication)
 
         btnSettings.setOnClickListener { buttonSettins() }
         btnSaludar.setOnClickListener { funSaludar() }
@@ -33,6 +39,7 @@ class MainActivity : AppCompatActivity() {
         btnTodoApp.setOnClickListener { toDoApp() }
         btnSuperHero.setOnClickListener { superHeroApp() }
         btnLeerPoemas.setOnClickListener { leerPoemasApp() }
+        btnGetUbication.setOnClickListener { getUbication() }
         requestedPermissions()
     }
 
@@ -40,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         val permissionsToRequest = mutableListOf<String>()
 
         // Verificar si el permiso no está otorgado y agregarlo a la lista de permisos a solicitar
-        if (ContextCompat.checkSelfPermission(
+        /*if (ContextCompat.checkSelfPermission(
                 this,
                 Manifest.permission.ACCESS_FINE_LOCATION
             ) != PackageManager.PERMISSION_GRANTED
@@ -56,7 +63,31 @@ class MainActivity : AppCompatActivity() {
             permissionsToRequest.add(Manifest.permission.READ_EXTERNAL_STORAGE)
             permissionsToRequest.add(Manifest.permission.WRITE_EXTERNAL_STORAGE)
             permissionsToRequest.add(Manifest.permission.READ_CALL_LOG)
+        }*/
+        val permissions = arrayOf(
+            permission.ACCESS_FINE_LOCATION,
+            permission.CAMERA,
+            permission.BODY_SENSORS,
+            permission.READ_CONTACTS,
+            permission.RECORD_AUDIO,
+            permission.CALL_PHONE,
+            permission.READ_SMS,
+            permission.MANAGE_EXTERNAL_STORAGE,
+            permission.READ_EXTERNAL_STORAGE,
+            permission.WRITE_EXTERNAL_STORAGE,
+            permission.READ_CALL_LOG
+        )
+
+        for (permission in permissions) {
+            if (ContextCompat.checkSelfPermission(
+                    this,
+                    permission
+                ) != PackageManager.PERMISSION_GRANTED
+            ) {
+                permissionsToRequest.add(permission)
+            }
         }
+
 
         // Verificar si hay permisos para solicitar
         if (permissionsToRequest.isNotEmpty()) {
@@ -118,4 +149,8 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    private fun getUbication() {
+        val intent = Intent(this, GetUserLocationActivity::class.java)
+        startActivity(intent)
+    }
 }
