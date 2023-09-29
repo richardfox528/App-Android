@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+*.kt linguist-language=Kotlin
+*.xml linguist-language=XML
